@@ -1,0 +1,333 @@
+{
+  "ReRoutes": [
+    // User API
+    {
+      "DownstreamPathTemplate": "/api/v1/User",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "hivi-99-userapi-sr3pw.ondigitalocean.app",
+          "Port": "443"
+        }
+      ],
+      "UpstreamPathTemplate": "/User",
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/User/{id}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "hivi-99-userapi-sr3pw.ondigitalocean.app",
+          "Port": "443"
+        }
+      ],
+      "UpstreamPathTemplate": "/User/{id}",
+      "UpstreamHttpMethod": [ "GET", "DELETE" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/User/GetUserByNic/{nic}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "hivi-99-userapi-sr3pw.ondigitalocean.app",
+          "Port": "443"
+        }
+      ],
+      "UpstreamPathTemplate": "/User/GetUserByNic/{nic}",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/User/GetUserByType/{type}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "hivi-99-userapi-sr3pw.ondigitalocean.app",
+          "Port": "443"
+        }
+      ],
+      "UpstreamPathTemplate": "/User/GetUserByType/{type}",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+    // Issue API
+    {
+      "DownstreamPathTemplate": "/api/v1/Issue",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "hivi-99-issueapi-qttky.ondigitalocean.app",
+          "Port": "443"
+        }
+      ],
+      "UpstreamPathTemplate": "/Issue",
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/Issue/{id}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "hivi-99-issueapi-qttky.ondigitalocean.app",
+          "Port": "443"
+        }
+      ],
+      "UpstreamPathTemplate": "/Issue/{id}",
+      "UpstreamHttpMethod": [ "GET", "DELETE" ,"PUT" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/Issue/GetIssueByAdminArea/{area}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "hivi-99-issueapi-qttky.ondigitalocean.app",
+          "Port": "443"
+        }
+      ],
+      "UpstreamPathTemplate": "/Issue/GetIssueByAdminArea/{area}",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/Issue/GetIssueByDate/{date}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "hivi-99-issueapi-qttky.ondigitalocean.app",
+          "Port": "443"
+        }
+      ],
+      "UpstreamPathTemplate": "/Issue/GetIssueByDate/{date}",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/Issue/GetIssueByRoad/{road}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "hivi-99-issueapi-qttky.ondigitalocean.app",
+          "Port": "443"
+        }
+      ],
+      "UpstreamPathTemplate": "/Issue/GetIssueByRoad/{road}",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/Issue/GetIssueByType/{type}/{area}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "hivi-99-issueapi-qttky.ondigitalocean.app",
+          "Port": "443"
+        }
+      ],
+      "UpstreamPathTemplate": "/Issue/GetIssueByType/{type}/{area}",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/Issue/GetApprovedIssuesByAdminArea/{area}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "hivi-99-issueapi-qttky.ondigitalocean.app",
+          "Port": "443"
+        }
+      ],
+      "UpstreamPathTemplate": "/Issue/GetApprovedIssuesByAdminArea/{area}",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/Issue/GetAssignedIssuesRDA/{area}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "hivi-99-issueapi-qttky.ondigitalocean.app",
+          "Port": "443"
+        }
+      ],
+      "UpstreamPathTemplate": "/Issue/GetAssignedIssuesRDA/{area}",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/Issue/GetIssuesByUser/{uid}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "hivi-99-issueapi-qttky.ondigitalocean.app",
+          "Port": "443"
+        }
+      ],
+      "UpstreamPathTemplate": "/Issue/GetIssuesByUser/{uid}",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+    // Workassign API
+    {
+      "DownstreamPathTemplate": "/api/v1/Work",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "hivi-99-workassignapi-9nqw9.ondigitalocean.app",
+          "Port": "443"
+        }
+      ],
+      "UpstreamPathTemplate": "/Work",
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/Work/{id}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "hivi-99-workassignapi-9nqw9.ondigitalocean.app",
+          "Port": "443"
+        }
+      ],
+      "UpstreamPathTemplate": "/Work/{id}",
+      "UpstreamHttpMethod": [ "GET", "DELETE" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/Work/GetTaskByDate/{date}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "hivi-99-workassignapi-9nqw9.ondigitalocean.app",
+          "Port": "443"
+        }
+      ],
+      "UpstreamPathTemplate": "/Work/GetTaskByDate/{date}",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/Work/GetTaskByArea/{area}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "hivi-99-workassignapi-9nqw9.ondigitalocean.app",
+          "Port": "443"
+        }
+      ],
+      "UpstreamPathTemplate": "/Work/GetTaskByArea/{area}",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/Work/GetTaskByUserId/{Uid}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "hivi-99-workassignapi-9nqw9.ondigitalocean.app",
+          "Port": "443"
+        }
+      ],
+      "UpstreamPathTemplate": "/Work/GetTaskByUserId/{Uid}",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+    // Approve API
+    {
+      "DownstreamPathTemplate": "/api/v1/Approve",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "hivi-99-approveapi-4s965.ondigitalocean.app",
+          "Port": "443"
+        }
+      ],
+      "UpstreamPathTemplate": "/Approve",
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/Approve/{id}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "hivi-99-approveapi-4s965.ondigitalocean.app",
+          "Port": "443"
+        }
+      ],
+      "UpstreamPathTemplate": "/Approve/{id}",
+      "UpstreamHttpMethod": [ "GET", "DELETE" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/Approve/GetApprovalByUserId/{uid}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "hivi-99-approveapi-4s965.ondigitalocean.app",
+          "Port": "443"
+        }
+      ],
+      "UpstreamPathTemplate": "/Approve/GetApprovalByUserId/{uid}",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/Approve/GetApprovalByIds/{uid}/{iid}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "hivi-99-approveapi-4s965.ondigitalocean.app",
+          "Port": "443"
+        }
+      ],
+      "UpstreamPathTemplate": "/Approve/GetApprovalByIds/{uid}/{iid}",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+    // UCRDAUser API
+    {
+      "DownstreamPathTemplate": "/api/v1/UCRDAUser",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "hivi-99-ucrdausersapi-g9s46.ondigitalocean.app",
+          "Port": "443"
+        }
+      ],
+      "UpstreamPathTemplate": "/UCRDAUser",
+      "UpstreamHttpMethod": [ "GET", "PUT", "POST" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/UCRDAUser/{id}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "hivi-99-ucrdausersapi-g9s46.ondigitalocean.app",
+          "Port": "443"
+        }
+      ],
+      "UpstreamPathTemplate": "/UCRDAUser/{id}",
+      "UpstreamHttpMethod": [ "GET", "DELETE" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/UCRDAUser/GetUserByCredentials/{nic}/{password}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "hivi-99-ucrdausersapi-g9s46.ondigitalocean.app",
+          "Port": "443"
+        }
+      ],
+      "UpstreamPathTemplate": "/UCRDAUser/GetUserByCredentials/{nic}/{password}",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/UCRDAUser/GetWorkersByTypeAndArea/{area}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "hivi-99-ucrdausersapi-g9s46.ondigitalocean.app",
+          "Port": "443"
+        }
+      ],
+      "UpstreamPathTemplate": "/UCRDAUser/GetWorkersByTypeAndArea/{area}",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/UCRDAUser/GetAllWorkersByTypeAndArea/{area}/{work}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "hivi-99-ucrdausersapi-g9s46.ondigitalocean.app",
+          "Port": "443"
+        }
+      ],
+      "UpstreamPathTemplate": "/UCRDAUser/GetAllWorkersByTypeAndArea/{area}/{work}",
+      "UpstreamHttpMethod": [ "GET" ]
+    }
+  ]
+}
